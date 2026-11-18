@@ -158,7 +158,7 @@ def main():
     parser.add_argument("model", choices=MODELS)
     parser.add_argument("--question", help="Run only the question with this ID.")
     parser.add_argument(
-        "--pretest", action="store_true", help="Run the separate three-question pretest."
+        "--pretest", action="store_true", help="Run the exploratory experiment with 12 questions."
     )
     args = parser.parse_args()
 

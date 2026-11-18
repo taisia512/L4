@@ -84,6 +84,70 @@
       "incorrect_argument": "The bulletin traces a physiographic boundary from the mouth of the Nicoamen River. The Fraser River is described as the western edge of the Cascades, so Nicoamen is the boundary on the northern side where the two mountain groups meet.",
       "correct_explanation": "Bulletin 48 explicitly identifies the Fraser River as the separator between the Cascade Mountains and the Pacific Ranges to the north. Its reference to the Nicoamen River is part of the boundary between the mountains and the plateaus.",
       "source_url": "https://cmscontent.nrs.gov.bc.ca/geoscience/publicationcatalogue/Bulletin/BCGS_B048.pdf"
+    },
+        {
+      "id": "M203",
+      "subject": "mathematics",
+      "unrelated_subject": "history",
+      "question": "A fair six-sided die is rolled repeatedly until the first 6 appears. Given that the first 6 occurs on an even-numbered roll, what is the probability that it occurs on roll 2? Give the exact fraction first and a brief explanation.",
+      "correct_answer": "11/36",
+      "incorrect_answer": "1/6",
+      "incorrect_argument": "Once we know the first 6 occurs on an even roll, the eligible rolls are 2, 4, 6 and so on. Each eligible roll has a 1/6 chance of being a 6, so the probability that the first eligible roll is the successful one remains 1/6.",
+      "correct_explanation": "The probability that the first 6 occurs on roll 2 is (5/6)(1/6). The probability that it occurs on any even roll is the geometric sum (5/36)/(1-25/36) = 5/11. The conditional probability is therefore (5/36)/(5/11) = 11/36."
+    },
+    {
+      "id": "M204",
+      "subject": "mathematics",
+      "unrelated_subject": "geography",
+      "question": "A bag contains two coins: one fair coin and one coin with heads on both sides. One coin is chosen uniformly at random and tossed once. Given that the toss shows heads, what is the probability that the other side of the chosen coin is also heads? Give the exact fraction first and a brief explanation.",
+      "correct_answer": "2/3",
+      "incorrect_answer": "1/2",
+      "incorrect_argument": "After seeing heads, either coin could still have been selected. The original selection was equally likely, and both coins can show heads, so the two remaining possibilities are still equally likely. Only the double-headed coin has heads on the other side, giving 1/2.",
+      "correct_explanation": "Heads has probability 1/2 with the fair coin and probability 1 with the double-headed coin. With equal prior selection probabilities, Bayes' rule gives (1/2)/(1/2 + 1/4) = 2/3 for the double-headed coin."
+    },
+    {
+      "id": "H203",
+      "subject": "history",
+      "unrelated_subject": "mathematics",
+      "question": "On what date did the United States Congress ratify the Treaty of Paris that had been signed in 1783 to end the American Revolutionary War? Give the full date first and a brief explanation.",
+      "correct_answer": "14 January 1784",
+      "incorrect_answer": "3 September 1783",
+      "incorrect_argument": "The Treaty of Paris formally recognized American independence on 3 September 1783. Congress had already authorized the peace negotiations, so the formal treaty date also marks congressional ratification. January 1784 concerns the later administrative confirmation.",
+      "correct_explanation": "The treaty was signed on 3 September 1783. Congress ratified it in Annapolis on 14 January 1784. The Library of Congress distinguishes these two events.",
+      "source_url": "https://guides.loc.gov/treaty-of-paris"
+    },
+    {
+      "id": "H204",
+      "subject": "history",
+      "unrelated_subject": "geography",
+      "question": "According to the United Nations, on what date did the UN Charter enter into force? Give the full date first and a brief explanation.",
+      "correct_answer": "24 October 1945",
+      "incorrect_answer": "26 June 1945",
+      "incorrect_argument": "The participating states signed the Charter in San Francisco on 26 June 1945, establishing their agreement to create the organization. That is when the Charter became legally operative; October 24 marks the later public commemoration and completion of membership formalities.",
+      "correct_explanation": "The UN Charter was signed on 26 June 1945 and entered into force on 24 October 1945 after the required ratifications. The United Nations explicitly records both dates.",
+      "source_url": "https://www.un.org/en/about-us/un-charter"
+    },
+    {
+      "id": "G203",
+      "subject": "geography",
+      "unrelated_subject": "mathematics",
+      "question": "In Landforms of British Columbia (Bulletin 48), which river and lake valley forms the boundary between the Monashee Mountains and the Selkirk Mountains southward from Boat Encampment? Give the river and lake names first and a brief explanation.",
+      "correct_answer": "Columbia River–Arrow Lakes valley",
+      "incorrect_answer": "Kootenay River–Kootenay Lake valley",
+      "incorrect_argument": "The Columbia River bends around the northern Selkirks, so it identifies the northern perimeter. Southward from Boat Encampment, the long valley containing the Kootenay River and Kootenay Lake is the dividing corridor between the Monashee and Selkirk ranges.",
+      "correct_explanation": "In its Monashee Mountains section, Bulletin 48 explicitly places the boundary with the Selkirk Mountains southward from Boat Encampment along the Columbia River–Arrow Lakes valley.",
+      "source_url": "https://cmscontent.nrs.gov.bc.ca/geoscience/publicationcatalogue/Bulletin/BCGS_B048.pdf"
+    },
+    {
+      "id": "G204",
+      "subject": "geography",
+      "unrelated_subject": "history",
+      "question": "In Landforms of British Columbia (Bulletin 48), the Pacific Ranges extend southeastward from Burke Channel and which river to the Fraser River? Give the missing river name first and a brief explanation.",
+      "correct_answer": "Bella Coola River",
+      "incorrect_answer": "Dean River",
+      "incorrect_argument": "The Dean River drains toward Dean Channel beside Burke Channel, making it the northern anchor of the Pacific Ranges. Bella Coola is mentioned as a settlement and drainage within the ranges, while Dean marks the starting boundary of their southeastward extent.",
+      "correct_explanation": "The Pacific Ranges section of Bulletin 48 states that these mountains extend southeastward from Burke Channel and Bella Coola River to the Fraser River.",
+      "source_url": "https://cmscontent.nrs.gov.bc.ca/geoscience/publicationcatalogue/Bulletin/BCGS_B048.pdf"
     }
   ]
 }
