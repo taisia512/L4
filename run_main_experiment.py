@@ -157,17 +157,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("model", choices=MODELS)
     parser.add_argument("--question", help="Run only the question with this ID.")
-    parser.add_argument(
-        "--pretest", action="store_true", help="Run the exploratory experiment with 12 questions."
-    )
     args = parser.parse_args()
 
     project_dir = Path(__file__).resolve().parent
-    questions_file = (
-        "main_experiment_pretest_questions.json"
-        if args.pretest
-        else "main_experiment_questions.json"
-    )
+    questions_file = "main_experiment_pretest_questions.json"
     config = json.loads((project_dir / questions_file).read_text(encoding="utf-8"))
     questions = config["questions"]
     if args.question:
@@ -176,9 +169,7 @@ def main():
             parser.error(f"Unknown question ID: {args.question}")
 
     send = create_sender(args.model)
-    output_dir = project_dir / (
-        "main_experiment_pretest_transcripts" if args.pretest else "main_experiment_transcripts"
-    )
+    output_dir = project_dir / "main_experiment_pretest_transcripts"
     output_dir.mkdir(exist_ok=True)
 
     for question in questions:
